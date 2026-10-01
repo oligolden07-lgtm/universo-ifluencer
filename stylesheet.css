@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ESTILO DE FUENTE */
+h1, h2, h3, h4, h5, h6
+{font-family: "Libre Caslon Condensed", serif;}
+
+html {
+    scroll-behavior: smooth;
+}
+p{font-size: 16px;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf9f7;
+    color: #181818;
+}
+
+
+/* MENU */
+
+header {
+    background: white;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 22px 30px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #181818;
+    font-size: 15px;
+}
+
+nav a:hover {
+    opacity: .5;
+}
+
+
+/* SECCIONES */
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 75px 30px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.etiqueta {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #777;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+
+/* QUIENES SOMOS */
+
+.presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.foto {
+    width: 100%;
+    height: 330px;
+    background: #e7e7e7;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.texto p {
+    margin-bottom: 20px;
+}
+
+.frase {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+/* TARJETAS APPS */
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.app {
+    background: white;
+    border: 1px solid #bbb;
+    min-height: 260px;
+    padding: 25px;
+}
+
+.icono {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.app h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.app ul {
+    list-style: none;
+}
+
+.app li {
+    margin-bottom: 8px;
+}
+
+
+/* CIRCULOS */
+
+.circulos {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 55px;
+}
+
+.circulos div {
+    width: 95px;
+    height: 95px;
+
+    border: 1px solid #222;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* INGRESOS */
+
+.descripcion {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.ingresos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.ingresos-grid div {
+    background: white;
+    border: 1px solid #bbb;
+    padding: 30px 20px;
+    min-height: 110px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ESTRATEGIAS */
+
+.estrategias {
+    list-style: none;
+    max-width: 850px;
+}
+
+.estrategias li {
+    border-bottom: 1px solid #ccc;
+    padding: 18px 0;
+    font-size: 18px;
+}
+
+.estrategias span {
+    display: inline-block;
+    width: 55px;
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* TERMINOS */
+
+.terminos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.termino {
+    border: 1px solid #bbb;
+    background: white;
+    padding: 30px;
+    min-height: 170px;
+}
+
+.termino h3 {
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.termino p {
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #181818;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    letter-spacing: 3px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .presentacion {
+        grid-template-columns: 1fr;
+    }
+
+    .apps-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .circulos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ingresos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .terminos-grid {
+        grid-template-columns: 1fr;
+    }
+}
