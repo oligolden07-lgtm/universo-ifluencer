@@ -7,6 +7,7 @@
 h1, h2, h3, h4, h5, h6
 {font-family: "Libre Caslon Condensed", serif;}
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -66,7 +67,7 @@ section {
     max-width: 1200px;
     margin: auto;
     padding: 75px 30px;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid #c4588a;
 }
 
 .etiqueta {
@@ -133,7 +134,7 @@ h2 {
 }
 
 .app {
-    background: white;
+    background: pink;
     border: 1px solid #bbb;
     min-height: 260px;
     padding: 25px;
@@ -171,7 +172,7 @@ h2 {
     width: 95px;
     height: 95px;
 
-    border: 1px solid #222;
+    border: 1px solid #b6abab;
     border-radius: 50%;
 
     display: flex;
@@ -199,8 +200,8 @@ h2 {
 }
 
 .ingresos-grid div {
-    background: white;
-    border: 1px solid #bbb;
+    background: rgb(186, 31, 121);
+    border: 1px solid #e073a8;
     padding: 30px 20px;
     min-height: 110px;
 
@@ -239,8 +240,8 @@ h2 {
 }
 
 .termino {
-    border: 1px solid #bbb;
-    background: white;
+    border: 1px solid #dd6ea4;
+    background: rgb(210, 68, 124);
     padding: 30px;
     min-height: 170px;
 }
@@ -259,7 +260,7 @@ h2 {
 
 footer {
     background: #181818;
-    color: white;
+    color: rgb(150, 49, 111);
     text-align: center;
     padding: 40px;
     letter-spacing: 3px;
